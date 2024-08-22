@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Agency Template</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap 5.3.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <!-- Hover.css -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" rel="stylesheet">
+
+    <!-- AOS (Animate On Scroll) -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+
+    <!-- Animate.css -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+
+    <!-- Slick Carousel -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" rel="stylesheet">
+
+    <!-- style.css -->
+    <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- 
+        ===================================
+        Header
+        ===================================
+    -->
+<header>
+    <div class="home-top-nav">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center py-2 w-100">
+                
+                <div class="home-top-nav-left d-flex align-items-center">
+                    <span class="home-work-hours me-4">
+                        <i class="fas fa-clock"></i> working times/ Mon-Fri: 9am - 6pm
+                    </span>
+                </div>
+                
+                <div class="home-top-nav-right">
+                    <button id="home-language-switch" class="btn btn-light me-3">
+                        <i class="fas fa-globe"></i> <span id="home-language-text">EN</span>
+                    </button>
+                    <a href="login.html" class="btn btn-primary">
+                        <i class="fas fa-user"></i> Login
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- 
+        =====================
+        Navbar
+        =====================
+    -->
+    <nav class="home-navbar navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="home-navbar-brand navbar-brand" href="index.html">
+                <img src="assets/images/logo.png" alt="Travel Agency Logo" class="img-fluid">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#home-navbarNav" aria-controls="home-navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="home-navbarNav">
+                <ul class="home-navbar-nav navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">
+                            <i class="fas fa-home"></i> Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="destinations.html">
+                            <i class="fas fa-map-marker-alt"></i> Destinations
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html"><i class="fas fa-concierge-bell me-1"></i>Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="offers.html">
+                            <i class="fas fa-tag"></i> Offers
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">
+                            <i class="fas fa-info-circle"></i> About Us
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">
+                            <i class="fas fa-envelope"></i> Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+ 
+ <!-- 
+    ===================================
+    Hero Section
+    ===================================
+-->
+<section id="home-hero" class="home-hero-section" style="background-image:url('assets/images/explore-hero.jpg');" data-aos="fade-in" data-aos-duration="1500">
+    <div class="w-100 d-flex justify-content-center align-items-center">
+        <div class="container text-center">
+            <div class="home-hero-content">
+                <h1 class="home-hero-title animate__animated animate__fadeInDown mb-4">Explore the World with Us</h1>
+                <p class="home-hero-subtitle animate__animated animate__fadeInUp mb-5">Discover the best destinations and exclusive offers</p>
+                <a href="destinations.html" class="btn btn-primary btn-lg animate__animated animate__fadeInUp me-3" data-aos="zoom-in" data-aos-delay="500">Explore Destinations</a>
+                <a href="offers.html" class="btn btn-outline-light btn-lg animate__animated animate__fadeInUp" data-aos="zoom-in" data-aos-delay="700">View Offers</a>
+            </div>
+        </div>
+    </div>
+</section>    
+    
+ <!-- 
+    ===================================
+    Featured Destinations
+    ===================================
+-->
+<section id="home-featured-destinations" class="home-featured-destinations py-5">
+    <div class="container">
+        <div class="row text-center mb-4">
+            <div class="col">
+                <h2 class="home-section-title" data-aos="fade-up">Featured Destinations</h2>
+                <p class="home-section-subtitle" data-aos="fade-up" data-aos-delay="100">Explore our most popular destinations</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="home-destination-card" data-aos="zoom-in" data-aos-delay="200">
+                    <img src="assets/images/paris.jpg" alt="Destination 1" class="img-fluid mb-3">
+                    <h3 class="home-destination-title">Paris, France</h3>
+                    <p class="home-destination-description">The city of lights offers stunning architecture, world-class museums, and delicious cuisine.</p>
+                    <a href="paris.html" class="btn btn-outline-primary">Learn More</a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="home-destination-card" data-aos="zoom-in" data-aos-delay="300">
+                    <img src="assets/images/tokeyo.jpg" alt="Destination 2" class="img-fluid mb-3">
+                    <h3 class="home-destination-title">Tokyo, Japan</h3>
+                    <p class="home-destination-description">A vibrant city blending ancient traditions with modern innovation.</p>
+                    <a href="tokyo.html" class="btn btn-outline-primary">Learn More</a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="home-destination-card" data-aos="zoom-in" data-aos-delay="400">
+                    <img src="assets/images/newyork.jpg" alt="Destination 3" class="img-fluid mb-3">
+                    <h3 class="home-destination-title">New York, USA</h3>
+                    <p class="home-destination-description">The city that never sleeps, offering endless entertainment and iconic landmarks.</p>
+                    <a href="newyork.html" class="btn btn-outline-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>   
+    
+  <!-- 
+    ===================================
+    About Us
+    ===================================
+-->
+<section id="home-about-us" class="home-about-us py-5 position-relative bg-light">
+    <div class="container">
+        <div class="row align-items-center">
+            <!-- Image Section -->
+            <div class="col-lg-6 order-lg-2" data-aos="fade-left">
+                <div class="home-about-image position-relative">
+                    <img src="assets/images/about-agency.jpg" alt="About Us Image" class="img-fluid rounded shadow-lg position-relative z-index-1">
+                </div>
+            </div>
+            <!-- Content Section -->
+            <div class="col-lg-6 order-lg-1" data-aos="fade-right" data-aos-delay="200">
+                <div class="home-about-content">
+                    <h2 class="home-section-title">About Our Agency</h2>
+                    <p class="home-about-description mt-4">
+                        At our agency, we are passionate about crafting unforgettable travel experiences that go beyond the ordinary. Our team of travel enthusiasts works diligently to curate personalized journeys that cater to the unique desires of each traveler.
+                    </p>
+                    <p class="home-about-description mt-3">
+                        Whether you’re seeking an adventurous getaway, a romantic escape, or a family vacation, we ensure that every trip is a seamless and enriching adventure from start to finish.
+                    </p>
+                    <a href="about.html" class="btn btn-primary mt-4">Discover More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> 
+   
+<!-- 
+    ===================================
+    Services
+    ===================================
+-->
+<section id="home-services" class="home-services py-5">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col">
+                <h2 class="home-section-title mb-5" data-aos="fade-up">Our Services</h2>
+            </div>
+        </div>
+        <div class="row g-4">
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                <div class="home-service-card p-4 border rounded shadow-sm">
+                    <div class="home-service-icon mb-3">
+                        <i class="fas fa-plane-departure fa-3x text-primary"></i>
+                    </div>
+                    <h3 class="home-service-title">Flight Booking</h3>
+                    <p class="home-service-description">
+                        Book flights to your favorite destinations with ease and convenience.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                <div class="home-service-card p-4 border rounded shadow-sm">
+                    <div class="home-service-icon mb-3">
+                        <i class="fas fa-hotel fa-3x text-primary"></i>
+                    </div>
+                    <h3 class="home-service-title">Hotel Reservation</h3>
+                    <p class="home-service-description">
+                        Reserve the best hotels at competitive prices with our tailored packages.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                <div class="home-service-card p-4 border rounded shadow-sm">
+                    <div class="home-service-icon mb-3">
+                        <i class="fas fa-globe-europe fa-3x text-primary"></i>
+                    </div>
+                    <h3 class="home-service-title">Tour Packages</h3>
+                    <p class="home-service-description">
+                        Explore our exclusive tour packages designed to offer unforgettable experiences.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+  
+ <!-- 
+    ===================================
+    Call to Action
+    ===================================
+-->
+<section id="home-call-to-action" class="home-call-to-action text-center text-white py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h2 class="mb-4" data-aos="fade-up">Ready to Explore the World?</h2>
+                <p class="mb-4" data-aos="fade-up" data-aos-delay="100">Discover the best travel deals and start your adventure today.</p>
+                <a href="contact.html" class="btn btn-primary btn-lg" data-aos="fade-up" data-aos-delay="200">
+                    <i class="fas fa-plane-departure"></i> Contact Us Now
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 
+    ===================================
+    Featured Offers
+    ===================================
+-->
+<section id="home-featured-offers" class="home-featured-offers py-5">
+    <div class="container">
+        <div class="row text-center mb-4">
+            <div class="col">
+                <h2 data-aos="fade-up">Featured Offers</h2>
+                <p data-aos="fade-up" data-aos-delay="100">Explore our exclusive offers and deals for an unforgettable experience.</p>
+            </div>
+        </div>
+        <div class="row g-4">
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                <div class="home-offer-card rounded shadow-sm overflow-hidden">
+                    <img src="assets/images/beach.jpg" alt="Offer 1" class="img-fluid">
+                    <div class="home-offer-info p-3">
+                        <h3 class="home-offer-title">Beach Getaway</h3>
+                        <p class="home-offer-description">Enjoy a relaxing stay at a luxurious beach resort.</p>
+                        <a href="offers.html" class="btn btn-primary">View Offer</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                <div class="home-offer-card rounded shadow-sm overflow-hidden">
+                    <img src="assets/images/mountain.jpg" alt="Offer 2" class="img-fluid">
+                    <div class="home-offer-info p-3">
+                        <h3 class="home-offer-title">Mountain Adventure</h3>
+                        <p class="home-offer-description">Embark on an exciting adventure in the mountains.</p>
+                        <a href="offers.html" class="btn btn-primary">View Offer</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                <div class="home-offer-card rounded shadow-sm overflow-hidden">
+                    <img src="assets/images/citybreak.png" alt="Offer 3" class="img-fluid">
+                    <div class="home-offer-info p-3">
+                        <h3 class="home-offer-title">City Break</h3>
+                        <p class="home-offer-description">Explore vibrant cities and discover new cultures.</p>
+                        <a href="offers.html" class="btn btn-primary">View Offer</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 
+    ===================================
+    Blog Highlights
+    ===================================
+-->
+<section id="home-blog-highlights" class="home-blog-highlights py-5">
+    <div class="container">
+        <div class="row text-center mb-4">
+            <div class="col">
+                <h2 class="home-section-title mb-4" data-aos="fade-up">Blog Highlights</h2>
+                <p data-aos="fade-up" data-aos-delay="100">Stay updated with our latest travel tips and news.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="slick-carousel">
+                    <div class="blog-item" data-aos="fade-up" data-aos-delay="200">
+                        <div class="blog-card">
+                            <img src="assets/images/Top-10-Destinations-to-Visit-in-2024-1.jpg" alt="Blog Post 1" class="img-fluid">
+                            <div class="blog-card-body">
+                                <h3 class="blog-title">Top 10 Destinations for 2024</h3>
+                                <p class="blog-description">Discover the most exciting travel destinations for the coming year.</p>
+                                <a href="#" class="btn btn-primary">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-item" data-aos="fade-up" data-aos-delay="300">
+                        <div class="blog-card">
+                            <img src="assets/images/budget.png" alt="Blog Post 2" class="img-fluid">
+                            <div class="blog-card-body">
+                                <h3 class="blog-title">How to Travel on a Budget</h3>
+                                <p class="blog-description">Learn tips and tricks for traveling without breaking the bank.</p>
+                                <a href="#" class="btn btn-primary">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-item" data-aos="fade-up" data-aos-delay="400">
+                        <div class="blog-card">
+                            <img src="assets/images/packing.jpeg" alt="Blog Post 3" class="img-fluid">
+                            <div class="blog-card-body">
+                                <h3 class="blog-title">Ultimate Packing Guide</h3>
+                                <p class="blog-description">Pack smart with our comprehensive guide for your next adventure.</p>
+                                <a href="#" class="btn btn-primary">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 
+    ===================================
+    Partners
+    ===================================
+-->
+<section id="home-partners" class="home-partners py-5">
+    <div class="container">
+        <div class="row text-center mb-4">
+            <div class="col">
+                <h2 class="home-section-title mb-4" data-aos="fade-up">Our Trusted Partners</h2>
+                <p data-aos="fade-up" data-aos-delay="100">We are proud to collaborate with the following trusted brands.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="partners-logos">
+                    <div class="partner-logo" data-aos="fade-up" data-aos-delay="200">
+                        <img src="assets/images/b1.png" alt="Partner 1" class="img-fluid">
+                    </div>
+                    <div class="partner-logo" data-aos="fade-up" data-aos-delay="300">
+                        <img src="assets/images/b2.png" alt="Partner 2" class="img-fluid">
+                    </div>
+                    <div class="partner-logo" data-aos="fade-up" data-aos-delay="400">
+                        <img src="assets/images/b3.png" alt="Partner 3" class="img-fluid">
+                    </div>
+                    <div class="partner-logo" data-aos="fade-up" data-aos-delay="500">
+                        <img src="assets/images/b6.png" alt="Partner 4" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 
+    ===================================
+    Customer Testimonials
+    ===================================
+-->
+<section id="home-customer-testimonials" class="home-customer-testimonials py-5">
+    <div class="container">
+        <div class="row text-center mb-4">
+            <div class="col">
+                <h2 class="home-section-title mb-4" data-aos="fade-up">What Our Customers Say</h2>
+                <p data-aos="fade-up" data-aos-delay="100">Read the experiences of our happy clients.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="customer-testimonials-carousel">
+                    <div class="testimonial-item" data-aos="fade-up" data-aos-delay="200">
+                        <div class="testimonial-card">
+                            <img src="https://via.placeholder.com/80" alt="Customer 1" class="testimonial-avatar">
+                            <blockquote class="testimonial-text">
+                                "This travel agency provided an exceptional experience. The service was impeccable and the trip was unforgettable!"
+                            </blockquote>
+                            <cite class="testimonial-author">John Doe</cite>
+                            <p class="testimonial-position">Frequent Traveler</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-item" data-aos="fade-up" data-aos-delay="300">
+                        <div class="testimonial-card">
+                            <img src="https://via.placeholder.com/80" alt="Customer 2" class="testimonial-avatar">
+                            <blockquote class="testimonial-text">
+                                "I highly recommend this agency. The attention to detail and personalized service made all the difference."
+                            </blockquote>
+                            <cite class="testimonial-author">Jane Smith</cite>
+                            <p class="testimonial-position">Business Executive</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-item" data-aos="fade-up" data-aos-delay="400">
+                        <div class="testimonial-card">
+                            <img src="https://via.placeholder.com/80" alt="Customer 3" class="testimonial-avatar">
+                            <blockquote class="testimonial-text">
+                                "A fantastic travel experience from start to finish. The planning and execution were flawless!"
+                            </blockquote>
+                            <cite class="testimonial-author">Emily Johnson</cite>
+                            <p class="testimonial-position">Adventure Enthusiast</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- 
+    ===================================
+    Footer
+    ===================================
+-->
+<footer id="home-footer" class="home-footer py-5 bg-dark text-white">
+    <div class="container">
+        <div class="row mb-4">
+            <!-- About Us Section -->
+            <div class="col-md-4 mb-4 mb-md-0">
+                <h5 class="footer-section-title">About Us</h5>
+                <p>We are a leading travel agency dedicated to providing exceptional travel experiences. Our team ensures personalized service and unparalleled quality.</p>
+                <ul class="footer-social-icons list-unstyled">
+                    <li><a href="#" class="text-white" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#" class="text-white" aria-label="Twitter"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#" class="text-white" aria-label="Instagram"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#" class="text-white" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a></li>
+                </ul>
+            </div>
+            <!-- Quick Links Section -->
+            <div class="col-md-4 mb-4 mb-md-0">
+                <h5 class="footer-section-title">Quick Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="index.html" class="text-white">Home</a></li>
+                    <li><a href="destinations.html" class="text-white">Destinations</a></li>
+                    <li><a href="offers.html" class="text-white">Offers</a></li>
+                    <li><a href="about.html" class="text-white">About Us</a></li>
+                    <li><a href="contact.html" class="text-white">Contact</a></li>
+                </ul>
+            </div>
+            <!-- Contact Info Section -->
+            <div class="col-md-4">
+                <h5 class="footer-section-title">Contact Info</h5>
+                <ul class="list-unstyled">
+                    <li><i class="fas fa-map-marker-alt"></i> 1234 Travel St, City, Country</li>
+                    <li><i class="fas fa-phone-alt"></i> +123 456 7890</li>
+                    <li><i class="fas fa-envelope"></i> info@travelagency.com</li>
+                </ul>
+            </div>
+        </div>
+        <!-- Copyright -->
+        <div class="row">
+            <div class="col text-center">
+                <p class="mb-0">&copy; <span id="current-year"></span> Travel Agency. All Rights Reserved.</p>
+                <a href="#" class="btn btn-primary mt-3">Subscribe to Newsletter</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+ <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- AOS (Animate On Scroll) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+    <!-- Slick Carousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+     <!-- script.js -->
+    <script src="assets/js/script.js"></script>
+
+
+</body>
+
+</html>
